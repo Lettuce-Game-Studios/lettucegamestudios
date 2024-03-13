@@ -13,9 +13,10 @@
 
     <nav>
         <ul>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Users</a></li>
-            <li><a href="#">Settings</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li><a href="#" id="sign-out-btn">Sign Out</a></li>
         </ul>
     </nav>
 
@@ -27,5 +28,14 @@
     <footer>
         <p>&copy; 2023 Admin Panel. All rights reserved.</p>
     </footer>
+    <script>
+        document.getElementById('sign-out-btn').addEventListener('click', function(event) {
+            event.preventDefault();
+            if (confirm('Are you sure you want to sign out?')) {
+                // Redirect the user to the sign-out page or handle sign-out logic here.
+                window.location.href = 'sign-out.html';
+            }
+        });
+    </script>
 </body>
 </html>
