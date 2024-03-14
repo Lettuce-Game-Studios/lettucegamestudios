@@ -1,6 +1,6 @@
 <?php
 // Define the database connection parameters
-$db_file = 'path/to/your/database.accdb';
+$db_file = 'AdminPanLogDet1.accdb';
 $db_user = '';
 $db_pass = '';
 
