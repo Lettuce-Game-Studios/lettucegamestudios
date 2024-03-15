@@ -5,8 +5,8 @@ const password = document.getElementById("password");
 // Sample user data
 const users = [
   {
-    username: "user1",
-    password: "password1"
+    username: "oscar@lettucegamestudios.com",
+    password: "Testing1234"
   },
   {
     username: "user2",
