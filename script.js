@@ -15,9 +15,7 @@ const users = [
 ];
 
 // Save user data to localStorage
-function saveUserData() {
-  localStorage.setItem("users", JSON.stringify(users));
-}
+saveUserData();
 
 // Load user data from localStorage
 function loadUserData() {
@@ -44,6 +42,3 @@ loginForm.addEventListener("submit", e => {
     alert("Invalid username or password.");
   }
 });
-
-// Save user data
-saveUserData();
