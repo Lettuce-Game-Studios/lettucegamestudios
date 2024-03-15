@@ -32,6 +32,9 @@ function checkUser(username, password) {
   return users.some(user => user.username === username && user.password === password);
 }
 
+// Initialize user data
+loadUserData();
+
 // Handle login form submission
 loginForm.addEventListener("submit", e => {
   e.preventDefault();
@@ -43,6 +46,5 @@ loginForm.addEventListener("submit", e => {
   }
 });
 
-// Initialize user data
-loadUserData();
+// Save user data
 saveUserData();
