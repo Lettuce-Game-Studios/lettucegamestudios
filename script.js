@@ -6,7 +6,7 @@ const password = document.getElementById("password");
 const users = [
   {
     username: "lettuceman",
-    password: "Testing1234"
+    password: "testing1234"
   },
   {
     username: "user2",
