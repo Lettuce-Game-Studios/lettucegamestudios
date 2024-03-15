@@ -5,7 +5,7 @@ const password = document.getElementById("password");
 // Sample user data
 const users = [
   {
-    username: "oscar@lettucegamestudios.com",
+    username: "LettuceMan",
     password: "Testing1234"
   },
   {
