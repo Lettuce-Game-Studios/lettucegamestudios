@@ -37,7 +37,8 @@ loginForm.addEventListener("submit", e => {
   e.preventDefault();
   if (checkUser(username.value, password.value)) {
     alert("Login successful!");
-    // Redirect to another page or perform some action
+    // Redirect to AdminPanel.html
+    window.location.href = "AdminPanel.html";
   } else {
     alert("Invalid username or password.");
   }
