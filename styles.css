@@ -1,42 +1,290 @@
+/* Body styling */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  background-color: #4CAF50;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-}
-
-main {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 2rem;
-}
-
-section {
-  flex: 1 1 50%;
-  margin-bottom: 2rem;
-}
-
-section h2 {
-  border-bottom: 2px solid #4CAF50;
-  margin-bottom: 1rem;
-  padding-bottom: 0.5rem;
-}
-
-footer {
-  background-color: #4CAF50;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-}
-
-@media (max-width: 768px) {
-  section {
-    flex: 1 1 100%;
+	background-color: lightgrey;
   }
+  
+  /* Image styling */
+  img {
+	background-color: lightgrey;
+  }
+  
+  /* Link styling */
+  a {
+	color: black;
+	font-family: Arial;
+	text-decoration: none;
+  }
+  
+  /* Table styling */
+  table {
+	width: 100%;
+	background-color: lightgrey;
+	padding: 0px;
+  }
+  
+  /* Table data styling */
+  td {
+	padding: 10px;
+	text-align: center;
+  }
+  
+  /* Heading 4 styling */
+  h4 {
+	color: black;
+	font-family: Arial;
+	text-decoration: none;
+  }
+  
+  /* Paragraph styling */
+  p {
+	color: black;
+	font-family: Arial;
+	text-decoration: none;
+  }
+  
+  /* Heading 3 styling */
+  h3 {
+	display: inline-block;
+  font-size: 115%;
+	color: black;
+	font-family: Arial;
+	text-decoration: none;
+  }
+  
+  /* Heading 2 styling */
+h2 {
+	color: black;
+	font-family: Arial;
+	text-decoration: none;
+}
+h5 {
+	color: black;
+	font-family: Arial;
+	text-decoration: none;
+  }
+  
+  /* Heading 1 styling */
+h1 {
+  display: inline-block;
+  font-size: 250%;
+  background: linear-gradient(45deg, #0b6405, #11bc3f, #0bff0b, #00ff08);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400% 400%;
+  animation: rainbowanim 8s ease infinite;
+	color: black;
+	font-family: Arial;
+	text-decoration: none;
+}
+
+    @keyframes rainbowanim {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+  
+  /* Link hover styling */
+  a:hover {
+	color: #00aa14;
+	background-position: 0 100%;
+  }
+  
+  /* Top bar table styling */
+  .top-bar-table {
+	display: grid;
+	width: 80%;
+	grid-template-columns: auto auto auto;
+	background-color: lightgrey;
+	padding: 0px;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Top bar sites styling */
+  .top-bar-sites {
+	background-color: lightgrey;
+	border: 0px solid;
+	padding: 60px;
+	font-size: 18px;
+	text-align: center;
+	color: #ffffff;
+  }
+  
+  /* Top bar image styling */
+  .top-bar-img {
+	background-color: lightgrey;
+	border: 0px solid;
+	padding: 20px;
+	font-size: 15px;
+	text-align: center;
+	color: #ffffff;
+  }
+  
+  /* HFHFEP text styling */
+  .hfahfep-text {
+	border: 0px solid;
+	padding: 30px;
+	font-size: 16px;
+	width: 50%;
+	text-align: center;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+  
+  /* HFHFEP image styling */
+  .hfahfep-img {
+	background-color: lightgrey;
+	border: 0px solid;
+	padding: 0px solid;
+	font-size: 15%;
+	text-align: center;
+	color: #ffffff;
+  }
+  
+  /* Pets of the week header styling */
+  .petsoftheweek-header {
+	background-color: lightgrey;
+	border: 0px solid;
+	padding: 20px;
+	font-size: 15%;
+	text-align: center;
+	grid-column: 1 / 4;
+  }
+  
+  /* Pets of the week name 1 styling */
+  .petsoftheweek-name1 {
+	color: black;
+	float: left;
+	width: 33.33%;
+	position: relative;
+	left: 13%;
+  }
+  
+  /* Pets of the week name 2 styling */
+  .petsoftheweek-name2 {
+	color: black;
+	text-align: center;
+	position: center;
+  }
+  
+  /* Pets of the week name 3 styling */
+  .petsoftheweek-name3 {
+	color: black;
+	float: right;
+	padding: 0px;
+	position: right;
+  }
+  /* Pets of the week images */
+  .petsoftheweek-images {
+	float: left;
+  	width: 33.33%;
+	position: relative;
+	left: 6%;
+  }
+  /* Pets of the week Types */
+  .petsoftheweek-dogtypes {
+	color: black;
+	float: left;
+	width: 33.33%;
+	position: relative;
+	left: 5%;
+  }
+/* Footer Image */
+.footer-img {
+	color: black;
+	background-color: lightgrey;
+	display: inline-block;
+	margin-right: 20px;
+	vertical-align: middle;
+  }
+  
+  /* Footer Copyright */
+  .footer-copyright {
+	color: black;
+	background-color: transparent;
+	display: inline-block;
+	margin-right: 20px;
+  }
+  
+  /* Footer Links */
+  .footer-links {
+	color: black;
+	background-color: lightgrey;
+	display: inline-block;
+  }
+  /* Footer Map */
+.footer-map {
+	color: black;
+	background-color: lightgrey;
+	float: left;
+	position: relative;
+	left: 50%;
+	bottom: 10px;
+}
+.footer-copyright, .footer-links {
+	display: inline;
+	vertical-align: middle;
+	margin-left: 10px;
+  }
+  /* Send you to the Shadow Realm :O */
+.backtooldpage {
+	color: black;
+	background-color: transparent;
+	float: left;
+	position: relative;
+	left: -37%;
+	bottom: -215px;
+}
+  /* If you are on the page, this is your death :) */
+.OnPage:hover {
+	color: #737373;
+}
+.buttons {
+	background-color: black; 
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 12px;
+}
+.login-button-container {
+    position: relative;
+    margin-right: 10px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%; /* move the menu below the button */
+    right: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: none;
+    width: 150px; /* set the width of the dropdown menu */
+}
+
+.dropdown-button {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    width: 100%; /* set the width of the dropdown buttons */
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.dropdown-button:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown-button:last-child {
+    border-bottom: none;
 }

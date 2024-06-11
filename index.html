@@ -1,33 +1,129 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lettuce Game Studios</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Lettuce Game Studios</h1>
-    <button><a href="AdminLogin.html" style="color: #4CAF50; text-decoration: none;">Login</a></button>
-  </header>
-  <main>
-    <section id="games-section">
-      <h2>Our Games</h2>
-      <p>Check out some of our latest games:</p>
-      <ul>
-        <li><a href="ReworkD.html">ReworkD</a></li>
-        <li><a href="game2.html">Game 2</a></li>
-        <li><a href="game3.html">Game 3</a></li>
-      </ul>
-    </section>
-    <section id="about-section">
-      <h2>About Us</h2>
-      <p>Lettuce Game Studios was founded in 2022 with the goal of creating fun and engaging games for all ages.</p>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2023 Lettuce Game Studios</p>
-  </footer>
-</body>
+<html>
+	<head>
+	<!-- Header/Stylesheet/Website Name -->
+		<title>Lettuce Game Studios</title>
+		<link rel="stylesheet" href="styles.css">
+		 <link rel="icon" type="image/x-icon" href="favicon.png">
+		 <script>
+			// Add event listener to login button
+			document.addEventListener("DOMContentLoaded", function() {
+   			var loginButton = document.querySelector(".login-button");
+   			var dropdownMenu = document.querySelector(".dropdown-menu");
+    		loginButton.addEventListener("click", function() {
+        	dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
+   			});
+		});
+		  </script>
+	</head>
+	<!-- Body Section -->
+	<body>
+		<div class="top-bar-table">
+		<!-- Main Logo and Navigation -->
+			<div class="top-bar-img"><a href="website.html"><img src="MainLogo.png" width=300 height=100></img></a></div>
+			<center><div class="top-bar-sites"><a href="website.html"><b>    Our Work </b></a></div></center>
+			<div class="login-button-container">
+				<a href="#" class="login-button">
+					<img src="login-button.png" width=50 height=50 alt="Login Button">
+				</a>
+				<div class="dropdown-menu">
+					<a href="AdminLogin.html" class="dropdown-button">Admin Login</a>
+					<a href="UserLogin.html" class="dropdown-button">User Login</a>
+				</div>
+			</div>
+		</div>
+		<!-- Image and slogan -->
+		<div>
+			<div class="hfahfep-img"><img src="lgs-logo-bg.png" style="width:100%;"></img></div>
+			<div class="hfahfep-text"><h1 style="filter: brightness(100%)" class="h1rainbow">Making High Quality Games since 2024</h1><h3 style="filter: brightness(100%)">For almost Half a year, we have been COOKING in our studio bringing the best games money can buy. Learn more in the link below.</h3><a href="learn-more.html" class="buttons"><b>Learn More</b></a></div>
+		</div>
+		<!-- Start of Pets Of the Week Div -->
+		<div>
+			<center> <!-- Centers the text -->
+				<div class="petsoftheweek-header" style="font-size: 80%;"><h1>Our Games</h1></div> <!-- Area Title -->
+			</center>
+			<!-- Pets -->
+			<div class="petsoftheweek-name1">
+				<h2>Void Vector</h2>
+			</div>
+			<div class="petsoftheweek-name1">
+				<h2>Coming Soon...</h2>
+			</div>
+			<div class="petsoftheweek-name1">
+				<h2>Coming Soon...</h2>
+			</div>
+			<!-- Pet images -->
+			<div class="petsoftheweek-images">
+				<img src="vv-lgswebsite.jpg" width=337 height=329></img>
+			</div>
+			<div class="petsoftheweek-images">
+				<img src="coming-soon.png" width=337 height=329></img>
+			</div>
+			<div class="petsoftheweek-images">
+				<img src="coming-soon.png" width=337 height=329></img>
+			</div>
+			<!-- Description of Pets of the week -->
+			<div class="petsoftheweek-dogtypes">
+				<h4>Adventure off into a world of parasites and turned team members...</h4>
+				<a href="voidvector.html"><h5>Learn More</h5></a>
+			</div>
+			<div class="petsoftheweek-dogtypes">
+				<h4> </h4>
+			</div>
+			<div class="petsoftheweek-dogtypes">
+				<h4> </h4>
+			</div>
+		</div>
+		<div>
+			<center> <!-- Centers the text -->
+				<div class="petsoftheweek-header" style="font-size: 80%;"><h1>Our Team</h1></div> <!-- Area Title -->
+			</center>
+			<!-- Pets -->
+			<div class="petsoftheweek-name1">
+				<h2>Oscar Hull</h2>
+			</div>
+			<div class="petsoftheweek-name1">
+				<h2>Kaiden Kermode-West</h2>
+			</div>
+			<div class="petsoftheweek-name1">
+				<h2>Max Goodby</h2>
+			</div>
+			<!-- Pet images -->
+			<div class="petsoftheweek-images">
+				<img src="coming-soon.png" width=337 height=329></img>
+			</div>
+			<div class="petsoftheweek-images">
+				<img src="coming-soon.png" width=337 height=329></img>
+			</div>
+			<div class="petsoftheweek-images">
+				<img src="coming-soon.png" width=337 height=329></img>
+			</div>
+			<!-- Description of Pets of the week -->
+			<div class="petsoftheweek-dogtypes">
+				<h4>CEO, Creator of Lettuce Game Studios</h4>
+			</div>
+			<div class="petsoftheweek-dogtypes">
+				<h4>Head Artist</h4>
+			</div>
+			<div class="petsoftheweek-dogtypes">
+				<h4>Head Modeller and Scripter</h4>
+			</div>
+		</div>
+		<!-- Footer Area -->
+		<div>
+			<div class="footer">
+				<!-- Footer Logo -->
+				<img src="MainLogo.png" width=300 height=100 class="footer-img"></img>
+			</div>
+			<!-- Footer Links -->
+			<div class="footer-links">
+				<a class="OnPage">Home</a>
+				<a href="website.html"> -- Our Work</a>
+			</div>
+			<!-- Footer Copyright -->
+			<div class="footer-copyright">
+				<p class="footer-copyright">2024 © Lettuce Game Studios</p>
+			</div>
+		</div>
+	</body>
 </html>
+<!-- End of code -->
