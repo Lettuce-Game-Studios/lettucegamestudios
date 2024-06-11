@@ -1,20 +1,53 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Login Page</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Google OAuth2 Login</title>
+    <style>
+      /* Add some basic styling */
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      h1 {
+        text-align: center;
+      }
+      button {
+        width: 100%;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        margin-top: 20px;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
   </head>
   <body>
-    <div class="login-container">
-      <h1>Login</h1>
-      <form id="login-form">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <button type="submit">Login</button>
-      </form>
-    </div>
-    <script src="script.js"></script>
+    <h1>Google OAuth2 Login</h1>
+    <button id="google-login-button">Sign in with Google</button>
+    <script>
+      // the client id from GCP
+      const client_id = "Y279205605717-e0gs6hkqu6p1rqtl0kgplth12irn0a5s.apps.googleusercontent.com";
+
+      // create a CSRF token and store it locally
+      const state = crypto.randomBytes(16).toString("hex");
+      localStorage.setItem("latestCSRFToken", state);
+
+      // get the login button element
+      const button = document.getElementById("google-login-button");
+
+      // add a click event listener to the button
+      button.addEventListener("click", () => {
+        // construct the authorization URL
+        const link = `https://accounts.google.com/o/oauth2/auth?scope=https://www.googleapis.com/auth/cloud-platform&response_type=code&access_type=offline&state=${state}&redirect_uri=${window.location.origin}/integrations/google/oauth2/callback&client_id=${client_id}`;
+
+        // redirect the user to the authorizationURL
+        window.location.assign(link);
+      });
+    </script>
   </body>
 </html>
