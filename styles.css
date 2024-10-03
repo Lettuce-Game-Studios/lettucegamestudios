@@ -67,7 +67,7 @@ h5 {
 h1 {
   display: inline-block;
   font-size: 250%;
-  background: linear-gradient(45deg, #000000, #006d1d, #26ff26, #00ff08);
+  background: linear-gradient(45deg, #000000, #000000, #000000, #181818);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
